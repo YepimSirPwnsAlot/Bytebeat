@@ -8966,7 +8966,6 @@ end
 
 repeat wait() until game.Workspace:FindFirstChild("non")
 
---Converted with ttyyuu12345's model to script plugin v4
 function sandbox(var,func)
 	local env = getfenv(func)
 	local newenv = setmetatable({},{
@@ -9102,7 +9101,6 @@ Script0.Name = "SuTart"
 Script0.Parent = mas
 table.insert(cors,sandbox(Script0,function()
 wait(1/60)
-
 
 -- By RealBredbeargotban edit to su tart by Pza12TH
 -- Script Name: su tart
@@ -9718,7 +9716,7 @@ for i = 0,2,0.1 do
 	sentences.Enabled = true
 	sentences.Parent = ch.Torso
 	sentences.TextLabel.Text = "*laughs*"
-	wait(0.5)
+	wait(1)
 	repeat
 		sentences.TextLabel.TextTransparency = sentences.TextLabel.TextTransparency+0.05
 			wait(0.05)
@@ -11955,6 +11953,8 @@ for i,v in pairs(cors) do
 	end)
 end
 
+task.wait(6)
+
 local fileName = "MoonlordTheme.mp3"
     local fileUrl = "https://github.com/YepimSirPwnsAlot/Bytebeat/raw/main/MoonlordTheme.mp3"
 
@@ -11971,16 +11971,10 @@ local fileName = "MoonlordTheme.mp3"
 	end
 end
 
-local existing = game.Workspace:FindFirstChild("BackgroundMusic")
-if existing then 
-    existing:Stop()
-    existing:Destroy() 
-end
-
 local music = Instance.new("Sound")
 music.Name = "BackgroundMusic"
 music.SoundId = getcustomasset(fileName)
-music.Volume = 1
+music.Volume = 1.5
 music.Looped = true
 music.PlaybackSpeed = 1
 music.Parent = game.Workspace
